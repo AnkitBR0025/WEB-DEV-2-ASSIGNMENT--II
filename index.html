@@ -42,9 +42,8 @@
         let city = document.querySelector("#city-input")
         let weather = document.querySelector("#weather-info-box")
         let history = document.querySelector('#search-city-box')
-        // let searchHistory = document.querySelector('#search-city-box')
+        
         let list = []
-        //    let historyLocal = JSON.parse(localStorage.getItem("City")) || []
 
         let URL = "https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=${API_key}&units=metric";
         async function getWeatherInfo(city) {
@@ -100,5 +99,6 @@
 
 
 </body>
+
 
 </html>
